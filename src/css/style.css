@@ -23,6 +23,7 @@ li, a, button {
 	text-decoration: none;
 }
 
+
 .header {
 	display: flex; 
 	justify-content: space-between;
@@ -31,17 +32,21 @@ li, a, button {
 }
 
 .logo_img {
-
 	width: 15%;
+	cursor: pointer;
+}
+
+.social {
+	width: 5%;
 	cursor: pointer;
 }
 
 .nav__links {
 	list-style: none;
-	display: -webkit-flex;
+	/* display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
-	display: -o-flex;
+	display: -o-flex; */
 	display: flex;
 }
 
@@ -74,10 +79,19 @@ button:hover {
 	background: #B26519;
 }
 
+.slider {
+	position: relative;
+}
+
+
 .text-box{
+	position: absolute;
+	left: 30px;
+	top: 30px;
 	font-family: "ProximaNovaRegular", sans-serif;
 	color:#FFFFFF;
 	text-align: left;
+	background: transparent;
 }
 
 .slider-wrapper {
@@ -149,3 +163,40 @@ span :last-child {
 margin-right: 0;
 }
 
+.benefits{
+	display: grid;
+	
+}
+
+.title {
+	font-family: "ProximaNovaRegular", sans-serif;
+    margin-bottom: 0;
+    margin-top: 90px;
+	margin-bottom: 35px;
+    color: #ffff;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.benefits_box1 {
+	display: flex;
+    justify-content: left;
+	width: 60%;
+	height: 60%;
+}
+
+.benefits_box2 {
+	display: grid;
+	justify-content: center;
+    align-items: center;
+	grid-template-columns: repeat(4, 1fr);
+	width: 60%;
+	height: 60%;
+	margin-top: 35px;
+}
+
+.adv {
+	display: none; 
+}
